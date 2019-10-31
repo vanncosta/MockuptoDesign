@@ -1,4 +1,4 @@
-#  Portfolio.me Site
+# Mockup to Design
 
 ## About
 A fully responsive _static webpage_, called **Portfolio.me** , a portfolio website created from a converted design mockup. Built with HTML and CSS to achieve the correct visual and structural result.
