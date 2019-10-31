@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+/*
+ *
+ * Common
+ *
+ */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+
+  }
+
+img, embed, video,
+object {
+    max-width: 100%;
+    max-height: auto;
+}
+
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+}
+
+/*
+ *
+ * Font Definition
+ *
+ */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.header-content {
+    color:whitesmoke;
+    font-size: 35px;
+}
+
+.separator {
+    color: #7d97ad;
+    font-size: 35px;
+}
+
+.description {
+    color: whitesmoke;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+header {
+    box-shadow: 0 2px 5px rgba(59, 57, 57, 0.26);
+}
+
+.header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.top-logo {
+    margin:0;
+}
+
+.header-logo {
+    height: 6em;
+    margin-right: 1em;
+    margin-top: 12px;
+}
+
+
+.header-content{
+    width:90%;
+    align-self: flex-end;
+    margin-bottom: 1em;
+}
+
+.header-title, .header-desc{
+    text-align: right;
+    margin: 0;
+}
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+ /*
+ *
+ * Banner
+ *
+ */
+
+.banner-content {
+    background-color:rgba(15, 15, 15, 0.281);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    display:flex;
+    align-content: stretch;
+    flex-direction: column;
+}
+
+.banner-content img{
+    height: 15em;
+}
+
+
+ /*
+ *
+ * Separator
+ *
+ */
+
+.separator {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.separator h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+ /*
+ *
+ * Projects
+ *
+ */
+
+.projects {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(15, 15, 15, 0.281);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+}
+
+.projects div {
+    margin: 1em;
+}
+
+
+/*
+
+Pontos de interrupcao - Ajuste Tamanho da fonte Banner
+
+*/
+
+
+@media screen and (min-width: 725px) {
+    .description { font-size: 20px;}
+}
+
+@media screen and (min-width: 1041px){
+    .description { font-size: 25px;}
+    .projects { font-size: 25px;}
+  }
+
+@media screen and (min-width: 1400px){
+    .description { font-size: 30px;}
+    .projects { font-size: 30px;}
+  }
+
+
+/*
+
+Pontos de interrupcao - Ajuste Banner
+
+*/
+
+@media screen and (min-width: 621px) {
+    .banner-content { flex-direction: row; align-items: center;}
+  }
+
+/*
+
+Pontos de interrupcao - Ajuste Margens do display
+
+*/
+@media screen and (min-width: 389px) and (max-width: 1240px) {
+    .banner-content { width: 90%;}
+    .projects { width: 90%;}
+    .separator { width: 90%;}
+    .header-container { width: 90%;}
+  }
+
+@media screen and (min-width: 1241px) {
+    .banner-content {  flex-direction: row; width: 60%;}
+    .projects { width: 60%;}
+    .separator { width: 60%;}
+    .header-container { width: 60%;}
+  }
+
+
+  /*
+
+Pontos de interrupcao - Ajuste Projects
+
+*/
+@media screen and (max-width: 473px) {
+    .projects img {width: 118.16px; height: 118.16px;}
+    .projects {font-size: 15px;}
+  }
+
+  @media screen and (max-width: 790px) {
+    .projects {font-size: 20px;}
+  }
